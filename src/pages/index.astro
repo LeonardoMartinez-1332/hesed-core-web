@@ -74,12 +74,12 @@ import '../styles/global.css';
             
             <div class="max-w-6xl mx-auto text-center relative z-10">
                 
-                <h1 class="text-6xl md:text-8xl font-black tracking-tight mb-8 leading-tight">
+                <h1 class="text-4xl sm:text-6xl md:text-8xl font-black tracking-tight mb-8 leading-tight">
                     Impulsamos tu <span class="gradient-text">negocio</span> con
-                    <br><span class="text-orange-500">tecnología inteligente</span>
+                    <br class="hidden sm:block"><span class="text-orange-500">tecnología inteligente</span>
                 </h1>
                 
-                <p class="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-12 leading-relaxed font-light">
+                <p class="text-lg md:text-2xl text-gray-600 max-w-4xl mx-auto mb-12 leading-relaxed font-light px-4">
                     Transformamos operaciones complejas en flujos automatizados. 
                     <strong class="text-gray-900 font-semibold">Hesed Core</strong> diseña ecosistemas digitales que escalan con tu crecimiento.
                 </p>
@@ -129,18 +129,18 @@ import '../styles/global.css';
         <section id="sobre-nosotros" class="py-32 px-6 bg-white">
             <div class="max-w-7xl mx-auto">
                 <div class="grid lg:grid-cols-2 gap-20 items-center">
-                    <div class="slide-up">
+                    <div class="slide-up text-center lg:text-left">
                         <div class="inline-flex items-center gap-2 bg-blue-100 border border-blue-200 px-4 py-2 rounded-full mb-6">
                             <span class="text-blue-600">🎯</span>
                             <span class="text-sm font-semibold text-blue-700 uppercase tracking-wider">Nuestra Historia</span>
                         </div>
                         
-                        <h2 class="text-5xl md:text-6xl font-black tracking-tight mb-8 text-gray-900 leading-tight">
+                        <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-8 text-gray-900 leading-tight">
                             Innovación con <span class="gradient-text">Propósito</span>
                         </h2>
                         
                         <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-                            Hesed Core nació en García, Nuevo León, cuando su equipo reconoció que muchas barberías y salones
+                            Hesed Core nació en García, Nuevo León, cuando nuestro equipo reconoció que muchas barberías y salones
                             necesitaban software accesible y hecho a la medida. De esa necesidad surgió TrimmOS, nuestro primer
                             producto enfocado en agenda automática, clientes, personal y reportes inteligentes.
                         </p>
@@ -185,7 +185,7 @@ import '../styles/global.css';
                                     creando soluciones que transforman operaciones y generan crecimiento sostenible.
                                 </p>
                                 <div class="grid grid-cols-2 gap-4">
-                                    <div class="bg-white/70 p-4 rounded-xl border border-green-200">
+                                    <div class="bg-white p-4 rounded-xl border border-green-200 shadow-sm">
                                         <div class="text-2xl mb-2">⚡</div>
                                         <div class="font-semibold text-gray-800">Velocidad</div>
                                         <div class="text-sm text-gray-600">Implementación rápida</div>
@@ -215,7 +215,7 @@ import '../styles/global.css';
                         <span class="text-orange-600">🚀</span>
                         <span class="text-sm font-semibold text-orange-700 uppercase tracking-wider">Ecosistema Completo</span>
                     </div>
-                    <h2 class="text-5xl md:text-6xl font-black tracking-tight mb-6 gradient-text">
+                    <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-6 gradient-text">
                         Nuestros Productos
                     </h2>
                     <div class="w-24 h-1.5 bg-gradient-to-r from-green-400 to-blue-500 mx-auto rounded-full mb-8"></div>
@@ -228,9 +228,9 @@ import '../styles/global.css';
                     <!-- Card TrimmOS Premium -->
                     <div class="group bg-white p-1 rounded-3xl border border-gray-200 shadow-xl hover-lift transition-all duration-500 hover:border-green-300">
                         <div class="p-10 h-full bg-gradient-to-br from-white to-green-50/30 rounded-3xl">
-                            <div class="flex justify-between items-start mb-8">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl shadow-lg overflow-hidden ring-2 ring-white/80 ring-offset-2 ring-offset-green-600">
+                            <div class="flex flex-col sm:flex-row justify-between items-start gap-4 mb-8">
+                                <div class="flex items-center gap-4 text-left">
+                                    <div class="w-16 h-16 shrink-0 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl shadow-lg overflow-hidden ring-2 ring-white/80 ring-offset-2 ring-offset-green-600">
                                         <img src="/logo.png" alt="TrimmOS" class="w-full h-full object-cover" />
                                     </div>
                                     <div>
@@ -248,13 +248,13 @@ import '../styles/global.css';
                                 con reportes descargables y personalización de marca para tu negocio.
                             </p>
                             
-                            <div class="grid grid-cols-2 gap-4 mb-10">
-                                <div class="bg-white/70 p-4 rounded-xl border border-green-100">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10 text-left">
+                                <div class="bg-white p-4 rounded-xl border border-green-100 shadow-sm">
                                     <div class="flex items-center gap-3 mb-2">
                                         <div class="w-2 h-2 bg-green-500 rounded-full"></div>
                                         <span class="font-semibold text-gray-800">Agenda Automática</span>
                                     </div>
-                                    <p class="text-sm text-gray-600">Comparte tu agenda con tus clientes mediante QR y automatiza reservas.</p>
+                                    <p class="text-sm text-gray-600">Automatiza reservas mediante QR.</p>
                                 </div>
                                 <div class="bg-white/70 p-4 rounded-xl border border-green-100">
                                     <div class="flex items-center gap-3 mb-2">
@@ -274,9 +274,9 @@ import '../styles/global.css';
                     <!-- Card E-ComerCore Premium -->
                     <div class="group bg-white p-1 rounded-3xl border border-gray-200 shadow-xl hover-lift transition-all duration-500 hover:border-blue-300">
                         <div class="p-10 h-full bg-gradient-to-br from-white to-blue-50/30 rounded-3xl">
-                            <div class="flex justify-between items-start mb-8">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center text-3xl shadow-lg">
+                            <div class="flex flex-col sm:flex-row justify-between items-start gap-4 mb-8">
+                                <div class="flex items-center gap-4 text-left">
+                                    <div class="w-16 h-16 shrink-0 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center text-3xl shadow-lg">
                                         🛒
                                     </div>
                                     <div>
@@ -294,8 +294,8 @@ import '../styles/global.css';
                                 Todo el flujo administrativo listo para gestionar tu comercio con claridad.
                             </p>
                             
-                            <div class="grid grid-cols-2 gap-4 mb-10">
-                                <div class="bg-white/70 p-4 rounded-xl border border-blue-100">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10 text-left">
+                                <div class="bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
                                     <div class="flex items-center gap-3 mb-2">
                                         <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
                                         <span class="font-semibold text-gray-800">Inventarios</span>
@@ -324,7 +324,7 @@ import '../styles/global.css';
                         <div class="bg-white rounded-3xl p-8">
                             <h3 class="text-3xl font-bold text-gray-900 mb-4">¿Listo para transformar tu operación?</h3>
                             <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
-                                Hablemos de tu idea, tu comercio y cómo podemos construir software que te ayude a crecer
+                                Hablemos de tu idea y cómo podemos construir software que te ayude a crecer
                                 sin falsas promesas.
                             </p>
                             <a href="#contacto" class="inline-block bg-gradient-to-r from-green-500 to-blue-600 text-white px-10 py-4 rounded-2xl font-bold hover:from-green-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
@@ -344,7 +344,7 @@ import '../styles/global.css';
                         <span class="text-green-600">👥</span>
                         <span class="text-sm font-semibold text-green-700 uppercase tracking-wider">Nuestro Talento</span>
                     </div>
-                    <h2 class="text-5xl md:text-6xl font-black tracking-tight mb-6 gradient-text">
+                    <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-6 gradient-text">
                         Nuestro Equipo
                     </h2>
                     <div class="w-24 h-1.5 bg-gradient-to-r from-green-400 to-blue-500 mx-auto rounded-full mb-8"></div>
@@ -440,7 +440,7 @@ import '../styles/global.css';
                         <span class="text-orange-600">💬</span>
                         <span class="text-sm font-semibold text-orange-700 uppercase tracking-wider">Conversemos</span>
                     </div>
-                    <h2 class="text-5xl md:text-6xl font-black tracking-tight mb-6 gradient-text">
+                    <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-6 gradient-text">
                         Hablemos de tu Proyecto
                     </h2>
                     <div class="w-24 h-1.5 bg-gradient-to-r from-green-400 to-blue-500 mx-auto rounded-full mb-8"></div>
@@ -451,7 +451,7 @@ import '../styles/global.css';
                 </div>
 
                 <div class="grid lg:grid-cols-2 gap-16">
-                    <div class="slide-up">
+                    <div class="slide-up text-center lg:text-left">
                         <h3 class="text-3xl font-bold text-gray-900 mb-8">Información de Contacto</h3>
                         <div class="space-y-8">
                             <div class="flex items-start gap-6 p-6 bg-gradient-to-r from-green-50 to-green-100 rounded-2xl border border-green-200 hover-lift">
@@ -459,7 +459,7 @@ import '../styles/global.css';
                                     📧
                                 </div>
                                 <div>
-                                    <div class="font-bold text-gray-900 text-lg mb-1">Email Corporativo</div>
+                                    <div class="font-bold text-gray-900 text-lg mb-1">Email</div>
                                     <div class="text-gray-600 text-base">hesedcore@gmail.com</div>
                                     <div class="text-sm text-green-600 font-medium mt-1">Respuesta en 24 horas</div>
                                 </div>
@@ -482,7 +482,7 @@ import '../styles/global.css';
                                 </div>
                                 <div>
                                     <div class="font-bold text-gray-900 text-lg mb-1">Horarios de Atención</div>
-                                    <div class="text-gray-600 text-base">Lunes - Viernes: 8:00 - 18:00</div>
+                                    <div class="text-gray-600 text-base">Lun - Vie: 8:00 - 18:00</div>
                                     <div class="text-sm text-orange-600 font-medium mt-1">Soporte 24/7 para clientes</div>
                                 </div>
                             </div>
@@ -490,14 +490,13 @@ import '../styles/global.css';
                     </div>
 
                     <div class="slide-up">
-                        <div class="bg-gradient-to-br from-gray-50 to-white p-10 rounded-3xl border border-gray-200 shadow-2xl">
+                        <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-10 rounded-3xl border border-gray-200 shadow-2xl">
                             <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Contáctanos</h3>
                             <p class="text-gray-600 mb-8 text-center leading-relaxed">
                                 Para recibir información de lanzamiento o resolver dudas sobre TrimmOS, escríbenos directamente.
-                                Te responderemos rápido y te compartiremos detalles del pre-lanzamiento.
                             </p>
                             <div class="space-y-6">
-                                <div class="bg-white p-6 rounded-3xl border border-gray-200 shadow-sm">
+                                <div class="bg-white p-6 rounded-3xl border border-gray-200 shadow-sm text-left">
                                     <div class="text-sm text-gray-500 uppercase tracking-widest mb-2">Email de contacto</div>
                                     <div class="text-lg font-semibold text-gray-900">hesedcore@gmail.com</div>
                                     <div class="text-sm text-green-600 font-medium mt-2">Atención de lunes a viernes de 8:00 a 18:00</div>
@@ -527,14 +526,14 @@ import '../styles/global.css';
         <footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-20 px-6">
             <div class="max-w-7xl mx-auto">
                 <div class="grid lg:grid-cols-5 gap-12 mb-16">
-                    <div class="lg:col-span-2">
+                    <div class="lg:col-span-2 text-center lg:text-left">
                         <div class="flex items-center gap-4 mb-6">
                             <img src="/Hesed-Core-logo.png" alt="Hesed Core" class="h-14 w-auto drop-shadow-2xl rounded-full bg-transparent" style="background: transparent;" />
                             <div>
                                 <div class="text-2xl font-black gradient-text">Hesed Core</div>
                                 <div class="text-sm text-gray-400">Tecnología con Propósito</div>
                             </div>
-                        </div>
+                        </div> 
                         <p class="text-gray-300 mb-8 leading-relaxed text-lg">
                             Transformando negocios con tecnología inteligente. Creamos soluciones digitales que escalan, 
                             automatizan operaciones y generan crecimiento sostenible para empresas mexicanas.
@@ -564,7 +563,7 @@ import '../styles/global.css';
                         </div>
                     </div>
 
-                    <div>
+                    <div class="text-center lg:text-left">
                         <h4 class="font-bold text-white mb-6 text-lg">Productos</h4>
                         <ul class="space-y-4 text-gray-300">
                             <li><a href="#productos" class="hover:text-green-400 transition-colors duration-300 flex items-center gap-2">
@@ -579,7 +578,7 @@ import '../styles/global.css';
                         </ul>
                     </div>
 
-                    <div>
+                    <div class="text-center lg:text-left">
                         <h4 class="font-bold text-white mb-6 text-lg">Empresa</h4>
                         <ul class="space-y-4 text-gray-300">
                             <li><a href="#sobre-nosotros" class="hover:text-green-400 transition-colors duration-300 flex items-center gap-2">
@@ -594,7 +593,7 @@ import '../styles/global.css';
                         </ul>
                     </div>
 
-                    <div>
+                    <div class="text-center lg:text-left">
                         <h4 class="font-bold text-white mb-6 text-lg">Recursos</h4>
                         <ul class="space-y-4 text-gray-300">
                             <li><a href="#" class="hover:text-green-400 transition-colors duration-300 flex items-center gap-2">

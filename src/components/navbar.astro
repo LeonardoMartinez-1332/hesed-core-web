@@ -1,4 +1,4 @@
-<nav class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-lg border-b border-gray-200 shadow-lg">
+<nav class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-lg border-b border-gray-200 shadow-lg" id="main-nav">
     <div class="max-w-7xl mx-auto px-6 py-4">
         <div class="flex justify-between items-center">
             
@@ -20,9 +20,9 @@
                 
                 <div class="flex items-center gap-2">
                     <span class="text-3xl font-black tracking-tight gradient-text">
-                        Hesed
+                        Hesed 
                     </span>
-                    <span class="text-3xl font-normal text-gray-700">
+                    <span class="text-3xl font-normal text-gray-700 hidden sm:inline">
                         Core
                     </span>
                 </div>
@@ -52,11 +52,55 @@
             </div>
 
             
-            <button class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+            <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Menu">
                 <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </button>
         </div>
     </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-200 absolute w-full left-0 shadow-xl">
+        <div class="px-6 py-8 flex flex-col gap-6">
+            <a href="#productos" class="mobile-link text-xl font-semibold text-gray-700">Productos</a>
+            <a href="#sobre-nosotros" class="mobile-link text-xl font-semibold text-gray-700">Sobre Nosotros</a>
+            <a href="#equipo" class="mobile-link text-xl font-semibold text-gray-700">Equipo</a>
+            <a href="https://wa.me/5218135731273" target="_blank" class="bg-gradient-to-r from-green-500 to-blue-600 text-white px-6 py-4 rounded-2xl font-bold text-center shadow-lg">
+                Solicitar Demo
+            </a>
+        </div>
+    </div>
 </nav>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function toggleMenu() {
+        mobileMenu.classList.toggle('hidden');
+        menuIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+        
+        if (!mobileMenu.classList.contains('hidden')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    }
+
+    menuToggle?.addEventListener('click', toggleMenu);
+
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            menuIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+    });
+</script>
