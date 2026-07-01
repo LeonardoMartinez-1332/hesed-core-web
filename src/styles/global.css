@@ -11,7 +11,42 @@
 
 /* Animaciones y transiciones suaves */
 * {
+    box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    text-size-adjust: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        font-size: 14px;
+    }
 }
 
 .fade-in {

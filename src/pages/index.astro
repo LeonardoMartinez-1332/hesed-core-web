@@ -7,7 +7,7 @@ import '../styles/global.css';
     <head>
         <meta charset="utf-8" />
         <link rel="icon" type="image/png" href="/Hesed-Core-logo.png" />
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Hesed Core | Innovación Tecnológica para Empresas</title>
         <!-- Tipografía moderna -->
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -65,29 +65,29 @@ import '../styles/global.css';
         <Navbar />
 
         <!-- HERO SECTION MODERNO -->
-        <section class="relative pt-32 pb-20 px-6 overflow-hidden">
+        <section class="relative pt-24 sm:pt-28 lg:pt-32 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
             <div class="floating-shapes">
                 <div class="shape"></div>
                 <div class="shape"></div>
                 <div class="shape"></div>
             </div>
             
-            <div class="max-w-6xl mx-auto text-center relative z-10">
+            <div class="max-w-6xl mx-auto w-full text-center relative z-10">
                 
-                <h1 class="text-4xl sm:text-6xl md:text-8xl font-black tracking-tight mb-8 leading-tight">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-black tracking-tight mb-6 sm:mb-8 leading-tight">
                     Impulsamos tu <span class="gradient-text">negocio</span> con
                     <br class="hidden sm:block"><span class="text-orange-500">tecnología inteligente</span>
                 </h1>
                 
-                <p class="text-lg md:text-2xl text-gray-600 max-w-4xl mx-auto mb-12 leading-relaxed font-light px-4">
+                <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto mb-8 sm:mb-12 leading-relaxed font-light px-0 sm:px-4">
                     Transformamos operaciones complejas en flujos automatizados. 
                     <strong class="text-gray-900 font-semibold">Hesed Core</strong> diseña ecosistemas digitales que escalan con tu crecimiento.
                 </p>
                 
                 <!-- CTA Buttons Premium -->
-                <div class="flex flex-col sm:flex-row justify-center gap-6 mt-12">
-                    <a href="#productos" class="group bg-gradient-to-r from-green-500 to-blue-600 text-white px-12 py-5 rounded-2xl font-bold text-xl shadow-2xl hover:shadow-green-500/25 hover-lift transition-all duration-300">
-                        <span class="flex items-center gap-3">
+                <div class="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-4 sm:gap-6 mt-8 sm:mt-12">
+                    <a href="#productos" class="group bg-gradient-to-r from-green-500 to-blue-600 text-white w-full sm:w-auto px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-2xl font-bold text-base sm:text-lg shadow-2xl hover:shadow-green-500/25 hover-lift transition-all duration-300">
+                        <span class="flex items-center justify-center gap-3">
                             Explorar Productos
                             <svg class="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
@@ -95,8 +95,8 @@ import '../styles/global.css';
                         </span>
                     </a>
                     
-                    <a href="#contacto" class="group bg-white border-2 border-gray-200 text-gray-700 px-12 py-5 rounded-2xl font-bold text-xl hover:border-green-400 hover:text-green-600 transition-all duration-300 hover-lift shadow-lg">
-                        <span class="flex items-center gap-3">
+                    <a href="#contacto" class="group bg-white border-2 border-gray-200 text-gray-700 w-full sm:w-auto px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-2xl font-bold text-base sm:text-lg hover:border-green-400 hover:text-green-600 transition-all duration-300 hover-lift shadow-lg">
+                        <span class="flex items-center justify-center gap-3">
                             Agendar Consulta
                             <svg class="w-6 h-6 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
@@ -106,7 +106,7 @@ import '../styles/global.css';
                 </div>
 
                 <!-- Trust Indicators -->
-                <div class="flex flex-col sm:flex-row justify-center items-center gap-8 mt-16 opacity-80 text-center">
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8 mt-12 sm:mt-16 opacity-80 text-center">
                     <div class="max-w-xs">
                         <div class="text-lg font-semibold text-green-600 mb-1">En lanzamiento</div>
                         <div class="text-sm text-gray-500 uppercase tracking-wide">TrimmOS próximamente disponible</div>
@@ -126,26 +126,26 @@ import '../styles/global.css';
         </section>
 
         <!-- SECCIÓN SOBRE NOSOTROS MODERNA -->
-        <section id="sobre-nosotros" class="py-32 px-6 bg-white">
+        <section id="sobre-nosotros" class="py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-white">
             <div class="max-w-7xl mx-auto">
-                <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div class="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center min-w-0">
                     <div class="slide-up text-center lg:text-left">
                         <div class="inline-flex items-center gap-2 bg-blue-100 border border-blue-200 px-4 py-2 rounded-full mb-6">
                             <span class="text-blue-600">🎯</span>
                             <span class="text-sm font-semibold text-blue-700 uppercase tracking-wider">Nuestra Historia</span>
                         </div>
                         
-                        <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-8 text-gray-900 leading-tight">
+                        <h2 class="text-3xl sm:text-4xl lg:text-6xl font-black tracking-tight mb-6 sm:mb-8 text-gray-900 leading-tight">
                             Innovación con <span class="gradient-text">Propósito</span>
                         </h2>
                         
-                        <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        <p class="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
                             Hesed Core nació en García, Nuevo León, cuando nuestro equipo reconoció que muchas barberías y salones
                             necesitaban software accesible y hecho a la medida. De esa necesidad surgió TrimmOS, nuestro primer
                             producto enfocado en agenda automática, clientes, personal y reportes inteligentes.
                         </p>
                         
-                        <p class="text-xl text-gray-600 mb-10 leading-relaxed">
+                        <p class="text-lg sm:text-xl text-gray-600 mb-8 sm:mb-10 leading-relaxed">
                             Hoy conectamos esa experiencia en desarrollo con ideas comerciales reales, creando soluciones que
                             ayudan a crecer negocios locales sin complicaciones técnicas.
                         </p>
@@ -174,7 +174,7 @@ import '../styles/global.css';
                     </div>
                     
                     <div class="relative slide-up">
-                        <div class="bg-gradient-to-br from-green-400/10 to-blue-500/10 rounded-3xl p-12">
+                        <div class="bg-gradient-to-br from-green-400/10 to-blue-500/10 rounded-3xl p-6 sm:p-8 lg:p-12">
                             <div class="text-center">
                                 <div class="w-24 h-24 bg-gradient-to-br from-green-400 to-blue-500 rounded-3xl mx-auto mb-8 flex items-center justify-center text-5xl shadow-2xl">
                                     🚀
@@ -208,14 +208,14 @@ import '../styles/global.css';
         </section>
 
         <!-- SECCIÓN PRODUCTOS MODERNA -->
-        <section id="productos" class="py-32 px-6 bg-gradient-to-br from-gray-50 to-white">
+        <section id="productos" class="py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-20">
                     <div class="inline-flex items-center gap-2 bg-orange-100 border border-orange-200 px-4 py-2 rounded-full mb-6">
                         <span class="text-orange-600">🚀</span>
                         <span class="text-sm font-semibold text-orange-700 uppercase tracking-wider">Ecosistema Completo</span>
                     </div>
-                    <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-6 gradient-text">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6 gradient-text">
                         Nuestros Productos
                     </h2>
                     <div class="w-24 h-1.5 bg-gradient-to-r from-green-400 to-blue-500 mx-auto rounded-full mb-8"></div>
@@ -224,17 +224,17 @@ import '../styles/global.css';
                     </p>
                 </div>
 
-                <div class="grid lg:grid-cols-2 gap-12">
+                <div class="grid gap-8 lg:grid-cols-2 lg:gap-12 min-w-0">
                     <!-- Card TrimmOS Premium -->
                     <div class="group bg-white p-1 rounded-3xl border border-gray-200 shadow-xl hover-lift transition-all duration-500 hover:border-green-300">
-                        <div class="p-10 h-full bg-gradient-to-br from-white to-green-50/30 rounded-3xl">
+                        <div class="p-6 sm:p-8 lg:p-10 h-full bg-gradient-to-br from-white to-green-50/30 rounded-3xl">
                             <div class="flex flex-col sm:flex-row justify-between items-start gap-4 mb-8">
                                 <div class="flex items-center gap-4 text-left">
                                     <div class="w-16 h-16 shrink-0 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl shadow-lg overflow-hidden ring-2 ring-white/80 ring-offset-2 ring-offset-green-600">
-                                        <img src="/logo.png" alt="TrimmOS" class="w-full h-full object-cover" />
+                                        <img src="/logo.png" alt="TrimmOS" class="w-full" style="height:120%; object-fit:cover; object-position:top; transform:translateY(-10%); display:block; background:#fff;" />
                                     </div>
                                     <div>
-                                        <h3 class="text-3xl font-bold text-gray-900 mb-1">TrimmOS</h3>
+                                        <h3 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">TrimmOS</h3>
                                         <p class="text-green-600 font-semibold text-sm uppercase tracking-wide">Sistema de Gestión</p>
                                     </div>
                                 </div>
@@ -273,14 +273,14 @@ import '../styles/global.css';
 
                     <!-- Card E-ComerCore Premium -->
                     <div class="group bg-white p-1 rounded-3xl border border-gray-200 shadow-xl hover-lift transition-all duration-500 hover:border-blue-300">
-                        <div class="p-10 h-full bg-gradient-to-br from-white to-blue-50/30 rounded-3xl">
+                        <div class="p-6 sm:p-8 lg:p-10 h-full bg-gradient-to-br from-white to-blue-50/30 rounded-3xl">
                             <div class="flex flex-col sm:flex-row justify-between items-start gap-4 mb-8">
                                 <div class="flex items-center gap-4 text-left">
                                     <div class="w-16 h-16 shrink-0 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center text-3xl shadow-lg">
                                         🛒
                                     </div>
                                     <div>
-                                        <h3 class="text-3xl font-bold text-gray-900 mb-1">E-ComerCore</h3>
+                                        <h3 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">E-ComerCore</h3>
                                         <p class="text-blue-600 font-semibold text-sm uppercase tracking-wide">Gestión para Tiendas</p>
                                     </div>
                                 </div>
@@ -319,9 +319,9 @@ import '../styles/global.css';
                 </div>
 
                 <!-- Call to Action -->
-                <div class="text-center mt-20">
+                <div class="text-center mt-16 lg:mt-20">
                     <div class="bg-gradient-to-r from-green-500 to-blue-600 p-1 rounded-3xl shadow-2xl">
-                        <div class="bg-white rounded-3xl p-8">
+                        <div class="bg-white rounded-3xl p-6 sm:p-8">
                             <h3 class="text-3xl font-bold text-gray-900 mb-4">¿Listo para transformar tu operación?</h3>
                             <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
                                 Hablemos de tu idea y cómo podemos construir software que te ayude a crecer
@@ -337,14 +337,14 @@ import '../styles/global.css';
         </section>
 
         <!-- SECCIÓN EQUIPO MODERNA -->
-        <section id="equipo" class="py-32 px-6 bg-gradient-to-br from-gray-50 to-white border-y border-gray-100">
+        <section id="equipo" class="py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white border-y border-gray-100">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-20">
                     <div class="inline-flex items-center gap-2 bg-green-100 border border-green-200 px-4 py-2 rounded-full mb-6">
                         <span class="text-green-600">👥</span>
                         <span class="text-sm font-semibold text-green-700 uppercase tracking-wider">Nuestro Talento</span>
                     </div>
-                    <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-6 gradient-text">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6 gradient-text">
                         Nuestro Equipo
                     </h2>
                     <div class="w-24 h-1.5 bg-gradient-to-r from-green-400 to-blue-500 mx-auto rounded-full mb-8"></div>
@@ -354,9 +354,9 @@ import '../styles/global.css';
                     </p>
                 </div>
 
-                <div class="grid md:grid-cols-3 gap-8">
+                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     <!-- Miembro 1 -->
-                    <div class="group bg-white p-8 rounded-3xl border border-gray-200 shadow-xl hover-lift transition-all duration-500 text-center hover:border-green-300">
+                    <div class="group bg-white p-6 sm:p-8 rounded-3xl border border-gray-200 shadow-xl hover-lift transition-all duration-500 text-center hover:border-green-300">
                         <div class="relative mb-8">
                             <div class="w-28 h-28 bg-gradient-to-br from-green-400 to-green-600 rounded-3xl mx-auto flex items-center justify-center text-4xl text-white font-black shadow-2xl transform group-hover:scale-110 transition-transform duration-300">
                                 LM
@@ -365,7 +365,7 @@ import '../styles/global.css';
                                 ⭐
                             </div>
                         </div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Leonardo Teófilo Martínez</h3>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Leonardo Teófilo Martínez</h3>
                         <p class="text-green-600 font-bold mb-4 text-lg">CEO & Co-Founder</p>
                         <p class="text-gray-600 text-base leading-relaxed mb-6">
                             Director General y Co-Fundador. Lidera la visión estratégica y la ejecución de soluciones tecnológicas para clientes empresariales.
@@ -378,7 +378,7 @@ import '../styles/global.css';
                     </div>
 
                     <!-- Miembro 2 -->
-                    <div class="group bg-white p-8 rounded-3xl border border-gray-200 shadow-xl hover-lift transition-all duration-500 text-center hover:border-blue-300">
+                    <div class="group bg-white p-6 sm:p-8 rounded-3xl border border-gray-200 shadow-xl hover-lift transition-all duration-500 text-center hover:border-blue-300">
                         <div class="relative mb-8">
                             <div class="w-28 h-28 bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl mx-auto flex items-center justify-center text-4xl text-white font-black shadow-2xl transform group-hover:scale-110 transition-transform duration-300">
                                 FG
@@ -387,7 +387,7 @@ import '../styles/global.css';
                                 🚀
                             </div>
                         </div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Flor Guadalupe Rodríguez Martínez</h3>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Flor Guadalupe Rodríguez Martínez</h3>
                         <p class="text-blue-600 font-bold mb-4 text-lg">CPO & Co-Founder</p>
                         <p class="text-gray-600 text-base leading-relaxed mb-6">
                             Directora de Producto y Co-Fundadora. Diseña productos digitales que conectan con el cliente y generan valor de negocio sostenible.
@@ -400,7 +400,7 @@ import '../styles/global.css';
                     </div>
 
                     <!-- Miembro 3 -->
-                    <div class="group bg-white p-8 rounded-3xl border border-gray-200 shadow-xl hover-lift transition-all duration-500 text-center hover:border-orange-300">
+                    <div class="group bg-white p-6 sm:p-8 rounded-3xl border border-gray-200 shadow-xl hover-lift transition-all duration-500 text-center hover:border-orange-300">
                         <div class="relative mb-8">
                             <div class="w-28 h-28 bg-gradient-to-br from-orange-400 to-orange-600 rounded-3xl mx-auto flex items-center justify-center text-4xl text-white font-black shadow-2xl transform group-hover:scale-110 transition-transform duration-300">
                                 GC
@@ -409,7 +409,7 @@ import '../styles/global.css';
                                 🎯
                             </div>
                         </div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Guillermo Antonio Camarillo Viera</h3>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Guillermo Antonio Camarillo Viera</h3>
                         <p class="text-orange-600 font-bold mb-4 text-lg">COO / CMO & Co-Founder</p>
                         <p class="text-gray-600 text-base leading-relaxed mb-6">
                             Director de Operaciones / Marketing y Co-Fundador. Coordina la ejecución operativa y la estrategia de posicionamiento de marca.
@@ -433,14 +433,14 @@ import '../styles/global.css';
         </section>
 
         <!-- SECCIÓN CONTACTO MODERNA -->
-        <section id="contacto" class="py-32 px-6 bg-white">
+        <section id="contacto" class="py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-white">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-20">
                     <div class="inline-flex items-center gap-2 bg-orange-100 border border-orange-200 px-4 py-2 rounded-full mb-6">
                         <span class="text-orange-600">💬</span>
                         <span class="text-sm font-semibold text-orange-700 uppercase tracking-wider">Conversemos</span>
                     </div>
-                    <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-6 gradient-text">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6 gradient-text">
                         Hablemos de tu Proyecto
                     </h2>
                     <div class="w-24 h-1.5 bg-gradient-to-r from-green-400 to-blue-500 mx-auto rounded-full mb-8"></div>
@@ -450,11 +450,11 @@ import '../styles/global.css';
                     </p>
                 </div>
 
-                <div class="grid lg:grid-cols-2 gap-16">
+                <div class="grid gap-8 lg:grid-cols-2 lg:gap-16">
                     <div class="slide-up text-center lg:text-left">
                         <h3 class="text-3xl font-bold text-gray-900 mb-8">Información de Contacto</h3>
-                        <div class="space-y-8">
-                            <div class="flex items-start gap-6 p-6 bg-gradient-to-r from-green-50 to-green-100 rounded-2xl border border-green-200 hover-lift">
+                        <div class="space-y-4 sm:space-y-6 lg:space-y-8">
+                            <div class="flex items-start gap-4 sm:gap-6 p-4 sm:p-6 bg-gradient-to-r from-green-50 to-green-100 rounded-2xl border border-green-200 hover-lift">
                                 <div class="w-14 h-14 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center text-2xl shadow-lg">
                                     📧
                                 </div>
@@ -465,7 +465,7 @@ import '../styles/global.css';
                                 </div>
                             </div>
                             
-                            <div class="flex items-start gap-6 p-6 bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl border border-blue-200 hover-lift">
+                            <div class="flex items-start gap-4 sm:gap-6 p-4 sm:p-6 bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl border border-blue-200 hover-lift">
                                 <div class="w-14 h-14 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center text-2xl shadow-lg">
                                     📍
                                 </div>
@@ -476,7 +476,7 @@ import '../styles/global.css';
                                 </div>
                             </div>
                             
-                            <div class="flex items-start gap-6 p-6 bg-gradient-to-r from-orange-50 to-orange-100 rounded-2xl border border-orange-200 hover-lift">
+                            <div class="flex items-start gap-4 sm:gap-6 p-4 sm:p-6 bg-gradient-to-r from-orange-50 to-orange-100 rounded-2xl border border-orange-200 hover-lift">
                                 <div class="w-14 h-14 bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl flex items-center justify-center text-2xl shadow-lg">
                                     ⏰
                                 </div>
@@ -490,7 +490,7 @@ import '../styles/global.css';
                     </div>
 
                     <div class="slide-up">
-                        <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-10 rounded-3xl border border-gray-200 shadow-2xl">
+                        <div class="bg-gradient-to-br from-gray-50 to-white p-5 sm:p-8 lg:p-10 rounded-3xl border border-gray-200 shadow-2xl">
                             <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Contáctanos</h3>
                             <p class="text-gray-600 mb-8 text-center leading-relaxed">
                                 Para recibir información de lanzamiento o resolver dudas sobre TrimmOS, escríbenos directamente.
@@ -523,17 +523,17 @@ import '../styles/global.css';
         </section>
 
         <!-- FOOTER MODERNO -->
-        <footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-20 px-6">
+        <footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
             <div class="max-w-7xl mx-auto">
-                <div class="grid lg:grid-cols-5 gap-12 mb-16">
+                <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-5 mb-12 lg:mb-16">
                     <div class="lg:col-span-2 text-center lg:text-left">
                         <div class="flex items-center gap-4 mb-6">
-                            <img src="/Hesed-Core-logo.png" alt="Hesed Core" class="h-14 w-auto drop-shadow-2xl rounded-full bg-transparent" style="background: transparent;" />
+                            <img src="/Hesed-Core-logo.png" alt="Hesed Core" class="h-16 w-16 object-contain drop-shadow-2xl rounded-full" />
                             <div>
                                 <div class="text-2xl font-black gradient-text">Hesed Core</div>
-                                <div class="text-sm text-gray-400">Tecnología con Propósito</div>
+                                <div class="text-sm text-gray-400">Ingeniería de software con propósito</div>
                             </div>
-                        </div> 
+                        </div>
                         <p class="text-gray-300 mb-8 leading-relaxed text-lg">
                             Transformando negocios con tecnología inteligente. Creamos soluciones digitales que escalan, 
                             automatizan operaciones y generan crecimiento sostenible para empresas mexicanas.
@@ -610,12 +610,12 @@ import '../styles/global.css';
                 </div>
 
                 <!-- Newsletter Signup -->
-                <div class="bg-gradient-to-r from-green-500/10 to-blue-500/10 border border-green-500/20 rounded-3xl p-8 mb-12">
+                <div class="bg-gradient-to-r from-green-500/10 to-blue-500/10 border border-green-500/20 rounded-3xl p-6 sm:p-8 mb-10 lg:mb-12">
                     <div class="text-center">
                         <h3 class="text-2xl font-bold text-white mb-4">Mantente Actualizado</h3>
                         <p class="text-gray-300 mb-6">Suscríbete para recibir las últimas novedades y lanzamientos</p>
                         <div class="flex justify-center">
-                            <a href="https://wa.me/5218135731273?text=Hola%2C%20me%20gustaría%20recibir%20las%20novedades%20y%20lanzamientos%20de%20TrimmOS%20y%20otros%20productos%20de%20Hesed%20Core." target="_blank" rel="noreferrer noopener" class="bg-gradient-to-r from-green-500 to-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:from-green-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl inline-flex items-center gap-3">
+                            <a href="https://wa.me/5218135731273?text=Hola%2C%20me%20gustaría%20recibir%20las%20novedades%20y%20lanzamientos%20de%20TrimmOS%20y%20otros%20productos%20de%20Hesed%20Core." target="_blank" rel="noreferrer noopener" class="w-full sm:w-auto bg-gradient-to-r from-green-500 to-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:from-green-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-3">
                                 <span class="inline-flex items-center justify-center rounded-full bg-white p-1.5">
                                     <img src="/image.png" alt="WhatsApp" class="w-4 h-4 object-contain" />
                                 </span>
@@ -625,7 +625,7 @@ import '../styles/global.css';
                     </div>
                 </div>
 
-                <div class="border-t border-gray-800 pt-8 flex flex-col lg:flex-row justify-between items-center">
+                <div class="border-t border-gray-800 pt-8 flex flex-col lg:flex-row justify-between items-center gap-6">
                     <p class="text-gray-400 font-medium text-center lg:text-left">
                         &copy; {new Date().getFullYear()} Hesed Core • Todos los derechos reservados • García, Nuevo León, México
                     </p>
