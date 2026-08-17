@@ -190,7 +190,7 @@ import '../styles/global.css';
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div class="flex justify-center">
                         <div class="w-full max-w-sm">
-                            <img src="/Core.png" alt="Core - Mascota de Hesed Core" loading="lazy" class="w-full h-auto drop-shadow-2xl slide-up" />
+                            <img src="/Core.png" alt="Core - Mascota de Hesed Core" loading="lazy" class="w-full h-auto drop-shadow-2xl" />
                         </div>
                     </div>
                     <div>
@@ -825,32 +825,36 @@ import '../styles/global.css';
                 }
             });
 
-            // Scroll Animations
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
+            // Scroll Animations - Esperar a que el DOM esté completamente listo
+            document.addEventListener('DOMContentLoaded', function() {
+                const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                };
 
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                        observer.unobserve(entry.target);
-                    }
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, observerOptions);
+
+                // Apply animations to sections
+                const sections = document.querySelectorAll('section');
+                sections.forEach(section => {
+                    section.classList.add('fade-in');
+                    observer.observe(section);
                 });
-            }, observerOptions);
 
-            // Apply animations to sections
-            document.querySelectorAll('section').forEach(section => {
-                section.classList.add('fade-in');
-                observer.observe(section);
-            });
-
-            // Apply animations to specific card elements
-            document.querySelectorAll('.product-card, .founder-card, .team-member').forEach((card, index) => {
-                card.classList.add('slide-up');
-                card.classList.add(`stagger-${(index % 4) + 1}`);
-                observer.observe(card);
+                // Apply animations to specific card elements
+                const cards = document.querySelectorAll('.product-card, .founder-card, .team-member');
+                cards.forEach((card, index) => {
+                    card.classList.add('slide-up');
+                    card.classList.add(`stagger-${(index % 4) + 1}`);
+                    observer.observe(card);
+                });
             });
         </script>
     </body>
