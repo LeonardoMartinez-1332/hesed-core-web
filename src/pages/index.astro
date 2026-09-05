@@ -34,6 +34,56 @@ import '../styles/global.css';
             .platform-visual {
                 background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(248,250,252,1) 100%);
             }
+            .core-cloud {
+                position: relative;
+                isolation: isolate;
+                animation: coreFloat 4.8s ease-in-out infinite;
+            }
+            .core-cloud::before {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                left: 7%;
+                right: 7%;
+                bottom: 6%;
+                height: 25%;
+                border-radius: 999px;
+                background: rgba(255, 255, 255, 0.96);
+                box-shadow:
+                    -58px 8px 0 -8px rgba(255, 255, 255, 0.96),
+                    -25px -13px 0 -2px rgba(255, 255, 255, 0.96),
+                    25px -18px 0 3px rgba(255, 255, 255, 0.96),
+                    61px 6px 0 -6px rgba(255, 255, 255, 0.96),
+                    0 16px 22px rgba(59, 130, 246, 0.14);
+            }
+            .core-cloud::after {
+                content: '';
+                position: absolute;
+                z-index: -2;
+                left: 14%;
+                right: 14%;
+                bottom: 3%;
+                height: 12%;
+                border-radius: 50%;
+                background: rgba(59, 130, 246, 0.16);
+                filter: blur(12px);
+                transform: scaleX(0.9);
+                animation: cloudShadow 4.8s ease-in-out infinite;
+            }
+            @keyframes coreFloat {
+                0%, 100% { transform: translateY(0) rotate(-1deg); }
+                50% { transform: translateY(-14px) rotate(1deg); }
+            }
+            @keyframes cloudShadow {
+                0%, 100% { opacity: 0.7; transform: scaleX(0.9); }
+                50% { opacity: 0.4; transform: scaleX(0.72); }
+            }
+            @media (prefers-reduced-motion: reduce) {
+                .core-cloud,
+                .core-cloud::after {
+                    animation: none;
+                }
+            }
             .shape {
                 position: absolute;
                 border-radius: 50%;
@@ -189,8 +239,8 @@ import '../styles/global.css';
             <div class="max-w-6xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div class="flex justify-center">
-                        <div class="w-full max-w-sm">
-                            <img src="/Core.png" alt="Core - Mascota de Hesed Core" loading="lazy" class="w-full h-auto drop-shadow-2xl" />
+                        <div class="w-full max-w-sm core-cloud">
+                            <img src="/Core.png" alt="Core - Mascota de Hesed Core flotando sobre una nube" loading="lazy" class="relative z-10 w-full h-auto drop-shadow-2xl" />
                         </div>
                     </div>
                     <div>
@@ -676,7 +726,7 @@ import '../styles/global.css';
                         <div class="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">2</div>
                         <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-md pt-12">
                             <h3 class="text-2xl font-bold mb-3 text-gray-900">Diseñar</h3>
-                            <p class="text-gray-700">Arquitectura y diseño scalable, seguro y mantenible</p>
+                            <p class="text-gray-700">Arquitectura y diseño escalable, seguro y mantenible</p>
                         </div>
                     </div>
                     <div class="relative">
@@ -713,11 +763,11 @@ import '../styles/global.css';
                 </p>
 
                 <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-3xl p-12 border border-gray-200 shadow-lg mb-12">
-                    <p class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 break-words">hesedcore@gmail.com</p>
+                    <p class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 break-words">contacto@hesedcore.com</p>
                     <p class="text-lg text-gray-700 mb-8">
                         Responderemos a tu consulta dentro de 24 horas hábiles
                     </p>
-                    <a href="mailto:hesedcore@gmail.com" class="inline-flex items-center gap-2 bg-gradient-to-r from-green-600 to-blue-700 text-white px-10 py-4 rounded-2xl font-bold text-lg hover:from-green-700 hover:to-blue-800 transition-all shadow-lg hover:shadow-xl">
+                    <a href="mailto:contacto@hesedcore.com" class="inline-flex items-center gap-2 bg-gradient-to-r from-green-600 to-blue-700 text-white px-10 py-4 rounded-2xl font-bold text-lg hover:from-green-700 hover:to-blue-800 transition-all shadow-lg hover:shadow-xl">
                         Enviar Correo
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
@@ -778,7 +828,7 @@ import '../styles/global.css';
                     <div>
                         <h4 class="font-bold mb-4">Contacto</h4>
                         <ul class="space-y-2 text-gray-300">
-                            <li>hesedcore@gmail.com</li>
+                            <li>contacto@hesedcore.com</li>
                             <li>García, Nuevo León</li>
                             <li class="text-sm">Lun-Vie: 8:00-18:00</li>
                         </ul>
