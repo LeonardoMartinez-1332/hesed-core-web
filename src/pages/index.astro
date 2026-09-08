@@ -162,6 +162,58 @@ import '../styles/global.css';
             </div>
         </section>
 
+        <!-- AGENDA DE CORE: visible solo bajo demanda -->
+        <dialog id="agenda" class="m-auto w-[calc(100%-2rem)] max-w-6xl rounded-3xl bg-slate-50 p-0 text-gray-900 shadow-2xl backdrop:bg-slate-950/70">
+            <div class="max-h-[90vh] overflow-y-auto px-5 py-7 sm:px-8 lg:px-10 lg:py-9">
+                <div class="mb-8 flex items-start justify-between gap-5">
+                    <div class="max-w-3xl">
+                        <p class="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-blue-700">Agenda de Core · Septiembre a noviembre 2026</p>
+                        <h2 class="mb-4 text-3xl font-black leading-tight sm:text-4xl">Fechas para aprender y compartir</h2>
+                        <p class="text-lg leading-relaxed text-gray-700">Seleccionamos las fechas públicas que pueden aportar algo a nuestra comunidad. Lo próximo aparece primero.</p>
+                    </div>
+                    <button id="agenda-close" type="button" class="rounded-xl border border-gray-300 bg-white p-3 text-gray-600 transition hover:border-gray-500 hover:text-gray-900" aria-label="Cerrar agenda">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6l12 12M18 6L6 18"/></svg>
+                    </button>
+                </div>
+                <div class="mb-5 text-sm font-semibold text-gray-600" aria-live="polite"><span id="agenda-status">Página 1 de 2</span></div>
+                <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
+                    <article data-agenda-page="1" class="rounded-2xl border border-blue-200 bg-white p-6 shadow-sm"><div class="mb-5 flex items-start justify-between gap-4"><span class="rounded-full bg-blue-50 px-3 py-1 text-sm font-bold text-blue-700">13 SEP</span><svg class="h-7 w-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M16 3v4M8 3v4m-5 4h18M5 5h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z"/></svg></div><p class="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-500">Tecnología</p><h3 class="mb-2 text-2xl font-bold">Día del Programador</h3><p class="text-gray-700">Reconocemos a quienes convierten problemas en soluciones y construyen tecnología con propósito.</p></article>
+                    <article data-agenda-page="1" class="rounded-2xl border border-green-200 bg-white p-6 shadow-sm"><div class="mb-5 flex items-start justify-between gap-4"><span class="rounded-full bg-green-50 px-3 py-1 text-sm font-bold text-green-700">15–16 SEP</span><svg class="h-7 w-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M12 3v18M3 8h18M3 16h18M5 5l14 14M19 5L5 19"/></svg></div><p class="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-500">Identidad de México</p><h3 class="mb-2 text-2xl font-bold">Mes patrio e Independencia</h3><p class="text-gray-700">Orgullo por construir tecnología desde México, con respeto, pluralidad y comunidad.</p></article>
+                    <article data-agenda-page="1" class="rounded-2xl border border-green-200 bg-white p-6 shadow-sm"><div class="mb-5 flex items-start justify-between gap-4"><span class="rounded-full bg-green-50 px-3 py-1 text-sm font-bold text-green-700">TODO OCT</span><svg class="h-7 w-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M12 3a9 9 0 100 18 9 9 0 000-18zm0 4v5l3 2"/></svg></div><p class="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-500">Seguridad familiar</p><h3 class="mb-2 text-2xl font-bold">Mes de la ciberseguridad</h3><p class="mb-4 text-gray-700">Guías para niñas, niños, adolescentes y personas cuidadoras.</p><a href="/guias/guia-familiar-ciberseguridad.html" class="font-bold text-green-700 hover:text-green-900">Consultar las guías <span aria-hidden="true">→</span></a></article>
+                    <article data-agenda-page="1" class="rounded-2xl border border-blue-200 bg-white p-6 shadow-sm"><div class="mb-5 flex items-start justify-between gap-4"><span class="rounded-full bg-blue-50 px-3 py-1 text-sm font-bold text-blue-700">14 OCT</span><svg class="h-7 w-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M4 19h16M6 17V5h12v12M9 9h6M9 13h4"/></svg></div><p class="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-500">Ingeniería</p><h3 class="mb-2 text-2xl font-bold">Día Mundial de la Normalización</h3><p class="text-gray-700">Una mirada sencilla a estándares, interoperabilidad y calidad de software.</p></article>
+                    <article data-agenda-page="2" class="hidden rounded-2xl border border-orange-200 bg-white p-6 shadow-sm"><span class="rounded-full bg-orange-50 px-3 py-1 text-sm font-bold text-orange-700">1–2 NOV</span><p class="mt-5 mb-2 text-sm font-semibold uppercase tracking-wide text-gray-500">Cultura de México</p><h3 class="mb-2 text-2xl font-bold">Día de Muertos</h3><p class="text-gray-700">Una pieza respetuosa sobre memoria, identidad y comunidad.</p></article>
+                    <article data-agenda-page="2" class="hidden rounded-2xl border border-blue-200 bg-white p-6 shadow-sm"><span class="rounded-full bg-blue-50 px-3 py-1 text-sm font-bold text-blue-700">12 NOV</span><p class="mt-5 mb-2 text-sm font-semibold uppercase tracking-wide text-gray-500">Tecnología</p><h3 class="mb-2 text-2xl font-bold">Día Mundial de la Usabilidad</h3><p class="text-gray-700">Consejos para crear experiencias digitales útiles, claras y accesibles.</p></article>
+                    <article data-agenda-page="2" class="hidden rounded-2xl border border-green-200 bg-white p-6 shadow-sm"><span class="rounded-full bg-green-50 px-3 py-1 text-sm font-bold text-green-700">20 NOV</span><p class="mt-5 mb-2 text-sm font-semibold uppercase tracking-wide text-gray-500">Identidad de México</p><h3 class="mb-2 text-2xl font-bold">Revolución Mexicana</h3><p class="text-gray-700">Un mensaje histórico breve e institucional sobre transformación y comunidad.</p></article>
+                    <article data-agenda-page="2" class="hidden rounded-2xl border border-green-200 bg-white p-6 shadow-sm"><span class="rounded-full bg-green-50 px-3 py-1 text-sm font-bold text-green-700">30 NOV</span><p class="mt-5 mb-2 text-sm font-semibold uppercase tracking-wide text-gray-500">Seguridad</p><h3 class="mb-2 text-2xl font-bold">Día de la Seguridad Informática</h3><p class="text-gray-700">Cerramos el ciclo con hábitos, aprendizajes y compromisos.</p></article>
+                </div>
+                <div class="mt-8 flex items-center justify-center gap-3"><button id="agenda-prev" type="button" class="rounded-xl border border-gray-300 bg-white px-4 py-2 font-bold text-gray-700 disabled:cursor-not-allowed disabled:opacity-40" disabled>Anterior</button><button id="agenda-next" type="button" class="rounded-xl bg-blue-600 px-4 py-2 font-bold text-white hover:bg-blue-700">Siguiente</button></div>
+            </div>
+        </dialog>
+
+        <!-- CAMPAÑA COMUNITARIA ACTIVA -->
+        <section id="comunidad" class="relative overflow-hidden bg-slate-950 px-4 py-20 text-white sm:px-6 lg:px-8 lg:py-24">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_85%_20%,rgba(37,99,235,0.28),transparent_34%),linear-gradient(105deg,rgba(16,185,129,0.14),transparent_42%,rgba(239,68,68,0.1))]" aria-hidden="true"></div>
+            <div class="relative z-10 mx-auto max-w-6xl">
+                <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+                    <div>
+                        <p class="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-green-300">Septiembre · Orgullosamente construimos desde México</p>
+                        <h2 class="mb-5 text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">Tecnología con identidad y propósito</h2>
+                        <p class="mb-8 text-lg leading-relaxed text-blue-100 sm:text-xl">Este mes reconocemos el talento, la creatividad y la responsabilidad de quienes convierten problemas en soluciones desde México.</p>
+                        <div class="mb-7 flex items-start gap-4 rounded-2xl border border-white/15 bg-white/10 p-5">
+                            <svg class="mt-1 h-7 w-7 flex-shrink-0 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M8 3v4m8-4v4M5 9h14M6 5h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V7a2 2 0 012-2zm3 6h6m-6 4h4"/></svg>
+                            <div><p class="mb-1 text-sm font-bold uppercase tracking-[0.14em] text-green-300">Primera actividad · 13 de septiembre</p><h3 class="mb-2 text-2xl font-black text-white">Día del Programador</h3><p class="text-blue-100">Una pausa para reconocer a quienes imaginan, diseñan y construyen soluciones que hacen avanzar a sus comunidades.</p></div>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden rounded-3xl border border-white/20 bg-white/10 shadow-2xl">
+                        <img src="/Dia-del-programador.jpg" alt="Core celebra el Día del Programador el 13 de septiembre" class="h-full w-full object-cover" loading="eager" />
+                    </div>
+                </div>
+                <div class="mt-7 flex justify-center lg:justify-end">
+                    <button type="button" data-agenda-open class="inline-flex items-center gap-2 rounded-xl bg-green-400 px-5 py-3 font-bold text-slate-950 transition hover:bg-green-300">Ver agenda <span aria-hidden="true">→</span></button>
+                </div>
+            </div>
+        </section>
+
         <!-- NUESTRA VISIÓN -->
         <section id="vision" class="py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-white">
             <div class="max-w-6xl mx-auto">
@@ -841,38 +893,41 @@ import '../styles/global.css';
         </footer>
 
         <script>
-            const menuToggle = document.getElementById('menu-toggle');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const menuIcon = document.getElementById('menu-icon');
-            const closeIcon = document.getElementById('close-icon');
-            const mobileLinks = document.querySelectorAll('.mobile-link');
+            const agendaDialog = document.getElementById('agenda') as HTMLDialogElement | null;
+            const agendaOpenButtons = document.querySelectorAll<HTMLButtonElement>('[data-agenda-open]');
+            const agendaClose = document.getElementById('agenda-close');
+            const agendaItems = document.querySelectorAll<HTMLElement>('[data-agenda-page]');
+            const agendaStatus = document.getElementById('agenda-status');
+            const agendaPrevious = document.getElementById('agenda-prev') as HTMLButtonElement | null;
+            const agendaNext = document.getElementById('agenda-next') as HTMLButtonElement | null;
+            let agendaPage = 1;
 
-            function toggleMenu() {
-                if (!mobileMenu || !menuIcon || !closeIcon) return;
-
-                mobileMenu.classList.toggle('hidden');
-                menuIcon.classList.toggle('hidden');
-                closeIcon.classList.toggle('hidden');
-
-                if (!mobileMenu.classList.contains('hidden')) {
-                    document.body.style.overflow = 'hidden';
-                } else {
-                    document.body.style.overflow = 'auto';
-                }
-            }
-
-            if (menuToggle) {
-                menuToggle.addEventListener('click', toggleMenu);
-            }
-
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', toggleMenu);
+            agendaOpenButtons.forEach(button => {
+                button.addEventListener('click', () => agendaDialog?.showModal());
             });
 
-            window.addEventListener('scroll', () => {
-                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-                    toggleMenu();
-                }
+            agendaClose?.addEventListener('click', () => agendaDialog?.close());
+            agendaDialog?.addEventListener('click', event => {
+                if (event.target === agendaDialog) agendaDialog.close();
+            });
+
+            function updateAgenda() {
+                agendaItems.forEach(item => {
+                    item.classList.toggle('hidden', item.dataset.agendaPage !== String(agendaPage));
+                });
+                if (agendaStatus) agendaStatus.textContent = `Página ${agendaPage} de 2`;
+                if (agendaPrevious) agendaPrevious.disabled = agendaPage === 1;
+                if (agendaNext) agendaNext.disabled = agendaPage === 2;
+            }
+
+            agendaPrevious?.addEventListener('click', () => {
+                agendaPage = Math.max(1, agendaPage - 1);
+                updateAgenda();
+            });
+
+            agendaNext?.addEventListener('click', () => {
+                agendaPage = Math.min(2, agendaPage + 1);
+                updateAgenda();
             });
 
             // Scroll Animations - Esperar a que el DOM esté completamente listo
